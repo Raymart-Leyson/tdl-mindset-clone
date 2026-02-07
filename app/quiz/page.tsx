@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { ANSWER_OPTIONS, QUESTIONS } from "@/lib/mindset"; // Ensure this import is correct
+import { ANSWER_OPTIONS, QUESTIONS } from "@/lib/mindset";
 import { useQuiz } from "@/src/context/QuizContext";
 import { useRouter } from "next/navigation";
 
