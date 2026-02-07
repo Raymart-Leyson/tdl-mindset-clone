@@ -21,17 +21,17 @@ export function TabsNav() {
     };
 
     return (
-        <div className="px-6 max-w-6xl mx-auto mb-10">
-            <nav className="flex justify-center space-x-8 border-b-2 border-tdlInk/10 overflow-x-auto">
+        <div className="px-6 max-w-6xl mx-auto mb-8">
+            <nav className="flex justify-center space-x-8 lg:space-x-16">
                 {tabs.map((tab) => {
                     const active = isActive(tab.href);
                     return (
                         <Link
                             key={tab.label}
                             href={tab.href}
-                            className={`pb-3 text-sm font-bold tracking-widest transition-all duration-200 mt-2 ${active
-                                    ? "border-b-4 border-tdlInk text-tdlInk translate-y-[2px]"
-                                    : "text-tdlInk/60 hover:text-tdlInk hover:border-b-4 hover:border-tdlInk/30 hover:translate-y-[2px] border-transparent border-b-4"
+                            className={`pb-2 text-xs font-bold tracking-widest uppercase transition-all duration-200 border-b-4 ${active
+                                ? "border-tdlInk text-tdlInk"
+                                : "border-transparent text-tdlInk/50 hover:text-tdlInk hover:border-tdlInk/20"
                                 }`}
                         >
                             {tab.label}
